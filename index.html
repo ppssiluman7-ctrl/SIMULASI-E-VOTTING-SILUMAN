@@ -629,8 +629,8 @@ button.sb-pill.off { background: #dc2626; box-shadow: none; cursor: default; }
         let adminDpt = [], editPhoto = '', photoDataUrl = null, appSet = {}, barcodeVoter = null, appUrl = '', fromLink = false;
         const PH = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="200" height="240"><rect width="100%" height="100%" fill="#334155"/><text x="50%" y="50%" fill="#94a3b8" font-size="16" text-anchor="middle">Foto</text></svg>');
 
-        /* GANTI dengan alamat Web App Apps Script Anda (Deploy > Kelola deployment > https://script.google.com/macros/s/AKfycbybhd-SABUMxkx4HlFvWwWPSkg2QxlPlMwVUzoAHsvoxbN81WCOpQqFEfyitjpV_ZP6/exec) */
-        const API_URL = 'https://script.google.com/macros/s/AKfycbybhd-SABUMxkx4HlFvWwWPSkg2QxlPlMwVUzoAHsvoxbN81WCOpQqFEfyitjpV_ZP6/exec';
+        /* GANTI dengan alamat Web App Apps Script Anda (Deploy > Kelola deployment > https://script.google.com/macros/s/AKfycbwf9zDazk9kFzH_Y_37j8GfiLxbOo5BpWM4QakaYmzp-uokDdCT3cGqAbmLKzDckNJ5/exec) */
+        const API_URL = 'https://script.google.com/macros/s/AKfycbwf9zDazk9kFzH_Y_37j8GfiLxbOo5BpWM4QakaYmzp-uokDdCT3cGqAbmLKzDckNJ5/exec';
         let perluKode = false, memKode = '';
         function getKode() { try { return localStorage.getItem('bilik_kode') || memKode; } catch (e) { return memKode; } }
         function setKode(k) { memKode = k; try { localStorage.setItem('bilik_kode', k); } catch (e) {} }
